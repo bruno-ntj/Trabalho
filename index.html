@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Animações */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes expand {
+        from {
+          transform: scale(0.9);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      header,
+      nav,
+      section h2 {
+        animation: fadeIn 1s ease-in-out;
+      }
+      h1 {
+        animation: slideIn 1s ease-in-out;
+      }
+      nav ul li {
+        animation: expand 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bruno Silva</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou Bruno, Estudante de Análise e Desenvolvimento de Sistemas <br />
+        faço alguns cursos complementares à graduação.
+      </p>
+    </section>
+    <section id="experiencia">
+      <h2>Experiência Profissional</h2>
+      <p>No momento, não possuo experiência profissional.</p>
+    </section>
+    <section id="projetos">
+      <h2>Projetos</h2>
+     <a href="https://github.com/bruno-ntj">
+      <img src="img/icons8-github-50.png" alt="github">
+     </a>
+    <section id="contato">
+      <h2> Contato Profissional </h2>
+      <p>E-mail ,linkdin</p>
+    </section>
+    <footer>
+      <p>&copy; Bruno Silva 2024.</p>
+    </footer>
+  </body>
+</html>
